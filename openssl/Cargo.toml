@@ -28,9 +28,14 @@ cfg-if = "1.0"
 foreign-types = "0.3.1"
 libc = "0.2"
 once_cell = "1.5.2"
+chrono = "0.4.34"
 
 openssl-macros = { version = "0.1.0", path = "../openssl-macros" }
 ffi = { package = "openssl-sys", version = "0.9.99", path = "../openssl-sys" }
 
 [dev-dependencies]
 hex = "0.3"
+
+[[bin]]
+name = "oso_mk_certs"
+path = "examples/oso_mk_certs.rs"
